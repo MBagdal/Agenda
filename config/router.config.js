@@ -1,16 +1,21 @@
-var appConfig = angular.module('agenda',['ui.router']);
+var app = angular.module('agenda',['ui.router']);
 
-appConfig.config(function($stateprovider){
-    $stateprovider.state(
-        'contact',{
-            url: '/',
-            templateurl: 'contact.html',
-            controller: 'contactCtrl'
-        },
-        'contact.login',{
-            url: '/contact/login',
-            templateurl: 'login.html',
-            controller: 'loginCtrl'
-        }
-    );
+app.config(function($stateProvider, $urlRouterProvider){
+    $urlRouterProvider.otherwise('/erro');
+
+    $stateProvider
+    .state('contact',{
+        url: '/contact',
+        templateUrl: '../views/contact.html',
+        controller: 'contactCtrl'
+    })
+    .state('login',{
+        url: '/login',
+        templateUrl: '../views/login.html',
+        controller: 'loginCtrl'
+    })
+    .state('erro',{
+        url: '/erro',
+        templateUrl : '../views/error.html'
+    });
 });

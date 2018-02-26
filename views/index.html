@@ -13,12 +13,20 @@
     <script src="../libs/uirouter/angular-ui-router.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-    <script src="../config/router.config.js"></script>
-
     <title>{{title}} - Agenda</title>
+
+    <style>
+        .card{
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div ui-view></div>
+
+    <script src="../config/router.config.js"></script>
+    <script src="../controllers/login.js"></script>
+    <script src="../controllers/contact.js"></script> 
 </body>
 </html>
