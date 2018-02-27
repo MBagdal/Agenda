@@ -8,6 +8,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     .state('welcome',{
         url: '/',
         templateUrl: '../views/welcome.html',
+        controller: 'welcomeCtrl'
     })
     .state('contact',{
         url: '/contact',

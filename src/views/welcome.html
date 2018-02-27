@@ -1,37 +1,29 @@
 <div class="row">
-    <div class="content col-lg-6" style="background-color: #000;">
-        <div class="panel panel-default">
-          <div class="panel-heading">Map</div>
-          <div class="panel-body">
-              <div class="mybox"> </div>
-          </div>
-         </div>
-      </div>
+    <div class="colLeft col-md-7">
+        
+    </div>
     
-      <div class="content col-lg-6" style="background-color: #f00;">
-        <div class="panel panel-default">
-          <div class="panel-heading">Map</div>
-          <div class="panel-body">
-              <div class="mybox"> </div>
-          </div>
-         </div>
-      </div>
+    <div class="colRight col-md-5" ng-controller="welcomeCtrl">
+        <div class="row">
+            <h3>{{titleForm}}</h3>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" ng-model="email" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group col-md-12">
+                                <label for="exampleFormControlInput1">Senha</label>
+                                <input type="password" class="form-control" ng-model="senha" id="senha" placeholder="name@example.com">
+                        </div>
+                        <button class="btn btn-lg col-md-12" ng-click="logar(email,senha);">vai</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<style>
-    html, body {
-        height: 100%;
-        width: 100%;
-    }
-    .content {
-        height: 100%;
-    }
-     .panel {
-        height: 100%;
-    }
-    .panel-body {
-        height: calc(100vh - 200px);
-        overflow-y: auto; 
-    }
-    
-  </style>
