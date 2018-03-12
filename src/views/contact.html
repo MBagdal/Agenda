@@ -1,7 +1,7 @@
 <div ng-if="contacts.length <= 0">Você não tem contatos cadastrado.</div>
 
-<div class="container" ng-if="contacts.length > 0">
-    <div class="row">
+<div class="container" ng-if="contacts.length > 0" ng-init="checkAutoLogin();">
+    <div class="row ">
         <div class="col-md-4" ng-repeat="contact in contacts">
             <div class="card">
                 <img src="http://lorempixel.com/400/200/sports" alt="" class="card-img-top">

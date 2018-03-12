@@ -2,7 +2,7 @@ var app = angular.module('agenda',['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 
-    $urlRouterProvider.otherwise('/erro');
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
     .state('welcome',{
@@ -14,14 +14,5 @@ app.config(function($stateProvider, $urlRouterProvider){
         url: '/contact',
         templateUrl: '../views/contact.html',
         controller: 'contactCtrl'
-    })
-    .state('login',{
-        url: '/login',
-        templateUrl: '../views/login.html',
-        controller: 'loginCtrl'
-    })
-    .state('erro',{
-        url: '/erro',
-        templateUrl : '../views/error.html'
     });
 });
