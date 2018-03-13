@@ -2,15 +2,26 @@
     margin: 0;
     padding: 0;
 }
-.card{
+.cards{
     margin-top: 50px;
-    text-align: center;
+    text-align: left;
+    color: #fff;
+    background-color: #25333E;
 }
 .row{
     width: 100%;
     height: 100%;
     position: absolute;  
 }
+.btnLogar{
+    background-color: #1DB188;
+    color: #fff;
+}
+.cards input[type="email"], .cards input[type="password"]{
+
+    background-color : #25333E; 
+}
+
 
 .colLeft{
     width: 100%;
@@ -22,21 +33,37 @@
 .colRight{
     width: 100%;
     height: 100%;
-    background-color: #3498db;
+    background-color: #25333E;
 }
 
-.colRight > .row > h3{
+.colRight > .row h3{
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     color: #fff;
+    text-align: center;
     text-shadow: 1px 1px #000;
 }
 
-.colRight > .row > .card{
+.colRight > .row > .cards{
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -15% 0 0 -25%;
+}
+
+
+
+/* pagina principal - contact.hmtl */
+.LeftCol > .titleRow{
+    background-color: #000;
+}
+.LeftCol .row{
+    background-color: #25333E;
+}
+
+.LeftCol label{
+    text-align: center;
+    color: #fff;
 }

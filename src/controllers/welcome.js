@@ -15,7 +15,6 @@ app.controller('welcomeCtrl',function($scope,$state,$rootScope){
     
     $rootScope.$on('AutoLogin', function(event, data) {
         $scope.CheckIsAutoLogin();
-        toastr.success('Foi');
     });
 
     $scope.CheckIsAutoLogin = function(){
